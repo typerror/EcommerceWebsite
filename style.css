@@ -9,7 +9,7 @@
 }
 
 .main {
-    position: relative;
+    position: fixed;
     min-height: 100vh;
     background: radial-gradient(#E5C3D1, #F7A9A8);
     display: flex;
@@ -62,7 +62,6 @@ header {
 .content .top h2 {
     color: #91ADC2;
     font-family: 'Poppins';
-    right: 80%;
 }
 
 .content .top .author {
@@ -77,15 +76,20 @@ header {
     margin: 20px 0;
 }
 
-.imgTop .imgOne {
-    display: none;
-}
-
-.imgTop .imgOne.active {
-    display: block;
-}
-
 .imgTop .imgOne img {
     width: 200%;
     max-width: 600px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #91ADC2;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    font-weight: 500;
+    border-radius: 40px;
+    text-decoration: none;
 }
